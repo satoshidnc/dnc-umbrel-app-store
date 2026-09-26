@@ -3,7 +3,7 @@ id: dnc-content-gateway
 name: Content Gateway
 x-icon: https://raw.githubusercontent.com/rleed/umbrel-auxiliary-app-store/master/images/xyz/icon.svg
 tagline: Content Gateway
-category: Developer Tools
+category: developer
 version: "0.0.12"
 port: 8777
 description: >-
