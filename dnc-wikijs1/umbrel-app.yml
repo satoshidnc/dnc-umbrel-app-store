@@ -23,9 +23,9 @@ repo: https://github.com/requarks/wiki
 support: https://js.wiki/support
 port: 9183
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/master/wikijs/1.jpg
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/master/wikijs/2.jpg
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/master/wikijs/3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
