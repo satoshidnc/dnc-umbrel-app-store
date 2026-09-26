@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: dnc_wikijs1_server_1
+      APP_HOST: dnc-wikijs1_server_1
       APP_PORT: 3001
       PROXY_AUTH_ADD: "false"
   
