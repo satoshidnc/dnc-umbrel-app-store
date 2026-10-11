@@ -1,0 +1,41 @@
+manifestVersion: 1.1
+id: dnc-universal-sign-in
+name: Universal Sign-in
+icon: https://raw.githubusercontent.com/rleed/umbrel-auxiliary-app-store/master/images/universal-sign-in/icon.svg
+tagline: Universal Sign-in
+category: Social
+version: "0.0.1"
+port: 8767
+description: >-
+  Universal Sign-in allows users to sign in using a Lightning node id or a Bitcoin address they control.
+
+
+  ## Ideal for developers serving content on a public domain
+    - **Improved security** - The use of a signature instead of a password ensures that the secret to the user's identity is never compromised by the login process.
+    - **Reduced spam** - The use of publicly verifiable identities minimizes robot and spam attacks.
+    - **Simplified management** - No manual account creation. Administrator(s) can interact with new users prior to granting further access.
+
+
+gallery: []
+developer: rleed
+website: https://github.com/rleed
+submitter: rleed
+submission: https://github.com/rleed/umbrel-universal-sign-in
+repo: https://github.com/rleed/umbrel-universal-sign-in
+support: https://github.com/rleed/umbrel-universal-sign-in/issues
+releaseNotes: |-
+  ## Configure the Universal Sign-in app as follows:
+  1. Login to your Umbrel via SSH
+  2. pico ~/umbrel/app-data/dnc-universal-sign-in/data/env
+  3. Restart the Universal Sign-in app for the changes to take effect
+  
+  ## Configure your web server
+  Reverse-proxy the `/sign-in` route to this app, while continuing to serve all other routes from your Mattermost instance.
+  
+  ## Add a tip to your login page
+  In your CMS, add a hint such as `Please switch to [Universal Sign-in](/sign-in)`
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
