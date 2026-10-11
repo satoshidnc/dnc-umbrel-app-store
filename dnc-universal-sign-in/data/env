@@ -1,0 +1,5 @@
+MM_URL=https://your.domain.com
+MM_TEAM=welcometeamname
+MM_TOKEN=abcdefghijklmnopqrstuvwxyz
+HARD_PASS=AnyHardToGuessMeaningTrulyRandomPassword
+MEMPOOL_URL=https://mempool.guide
