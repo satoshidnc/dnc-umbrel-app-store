@@ -1,7 +1,7 @@
 manifestVersion: 1.1
 id: dnc-universal-sign-in
 name: Universal Sign-in
-icon: https://raw.githubusercontent.com/rleed/umbrel-auxiliary-app-store/master/images/universal-sign-in/icon.svg
+icon: https://raw.githubusercontent.com/satoshidnc/dnc-umbrel-app-store/master/images/universal-sign-in/icon.svg
 tagline: Universal Sign-in
 category: Social
 version: "0.0.1"
