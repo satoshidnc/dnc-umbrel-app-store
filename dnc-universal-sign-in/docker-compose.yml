@@ -5,7 +5,7 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: dnc-universal-sign-in_server_1
-      APP_PORT: 8767
+      APP_PORT: 8066
       PROXY_AUTH_WHITELIST: "/sign-in*"
 
   server:
