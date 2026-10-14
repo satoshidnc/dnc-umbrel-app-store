@@ -2,5 +2,6 @@ DNC_US_ORIGINS=["your.domain.com","other.your.domain.com"]
 MM_URL=https://your.domain.com
 MM_TEAM=welcometeamname
 MM_TOKEN=abcdefghijklmnopqrstuvwxyz
+HARD_PASS=AnyHardToGuessMeaningTrulyRandomPassword
 DNC_US_MEMPOOL_API=https://mempool.guide/api
 DNC_US_SECRET=AnyHardToGuessMeaningTrulyRandomPassword
