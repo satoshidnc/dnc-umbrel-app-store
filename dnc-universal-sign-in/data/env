@@ -3,4 +3,4 @@ MM_URL=https://your.domain.com
 MM_TEAM=welcometeamname
 MM_TOKEN=abcdefghijklmnopqrstuvwxyz
 HARD_PASS=AnyHardToGuessMeaningTrulyRandomPassword
-MEMPOOL_URL=https://mempool.guide
+DNC_US_MEMPOOL_API=https://mempool.guide/api/v1
