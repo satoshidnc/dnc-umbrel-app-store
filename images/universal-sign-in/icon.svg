@@ -8,11 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 64 64"
+   viewBox="0 0 80 80"
    version="1.1"
    id="svg20"
    sodipodi:docname="icon.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   width="80"
+   height="80">
   <metadata
      id="metadata24">
     <rdf:RDF>
@@ -39,8 +41,8 @@
      id="namedview22"
      showgrid="false"
      inkscape:zoom="3.6875"
-     inkscape:cx="32"
-     inkscape:cy="32"
+     inkscape:cx="40"
+     inkscape:cy="39.999997"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -70,7 +72,7 @@
        x2="65.627121"
        y2="66.440674"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2040816,0,0,1.1706351,-7.0204084,-5.777781)" />
+       gradientTransform="matrix(1.2040816,0,0,1.1706351,0.9795916,2.2222219)" />
   </defs>
   <title
      id="title6">Key</title>
@@ -79,34 +81,42 @@
      id="rect834"
      width="80"
      height="80"
-     x="-8"
-     y="-8.0000029" />
+     x="0"
+     y="0" />
   <g
      id="Layer_2"
-     data-name="Layer 2">
+     data-name="Layer 2"
+     transform="translate(8,8.0000029)">
     <g
        id="Layer_1-2"
        data-name="Layer 1">
       <path
          class="cls-1"
-         d="M44,0A20,20,0,1,0,64,20,20,20,0,0,0,44,0Zm4,20a4,4,0,1,1,4-4A4,4,0,0,1,48,20Z"
-         id="path8" />
+         d="M 44,0 A 20,20 0 1 0 64,20 20,20 0 0 0 44,0 Z m 4,20 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill:#ffb74d" />
       <polygon
          class="cls-1"
-         points="40 34 24 50 20 50 20 54 16 54 16 58 10 58 10 64 0 64 0 54 30 24 40 34"
-         id="polygon10" />
+         points="20,50 20,54 16,54 16,58 10,58 10,64 0,64 0,54 30,24 40,34 24,50 "
+         id="polygon10"
+         style="fill:#ffb74d" />
       <polygon
          class="cls-2"
-         points="29 45 24 50 20 50 20 54 16 54 16 58 10 58 10 64 0 64 24 40 29 45"
-         id="polygon12" />
+         points="20,50 20,54 16,54 16,58 10,58 10,64 0,64 24,40 29,45 24,50 "
+         id="polygon12"
+         style="fill:#ef9014" />
       <path
          class="cls-2"
-         d="M44,4A16,16,0,1,0,60,20,16,16,0,0,0,44,4Zm0,30A14,14,0,1,1,58,20,14,14,0,0,1,44,34Z"
-         id="path14" />
+         d="M 44,4 A 16,16 0 1 0 60,20 16,16 0 0 0 44,4 Z m 0,30 A 14,14 0 1 1 58,20 14,14 0 0 1 44,34 Z"
+         id="path14"
+         inkscape:connector-curvature="0"
+         style="fill:#ef9014" />
       <polygon
          class="cls-2"
-         points="4 54 24 34 24 36 4 56 4 54"
-         id="polygon16" />
+         points="24,36 4,56 4,54 24,34 "
+         id="polygon16"
+         style="fill:#ef9014" />
     </g>
   </g>
 </svg>
