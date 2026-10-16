@@ -4,7 +4,7 @@ name: Universal Sign-in
 icon: https://raw.githubusercontent.com/satoshidnc/dnc-umbrel-app-store/master/images/universal-sign-in/icon.svg
 tagline: Universal Sign-in
 category: Social
-version: "0.0.63"
+version: "0.0.64"
 port: 8767
 description: >-
   Universal Sign-in allows users to sign in using a Lightning node id or a Bitcoin address they control.
