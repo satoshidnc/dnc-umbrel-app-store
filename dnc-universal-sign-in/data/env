@@ -5,3 +5,4 @@ MM_TOKEN=abcdefghijklmnopqrstuvwxyz
 HARD_PASS=AnyHardToGuessMeaningTrulyRandomPassword
 DNC_US_MEMPOOL_API=https://mempool.guide/api
 DNC_US_SECRET=AnyHardToGuessMeaningTrulyRandomPassword
+DNC_US_FALLBACK_RECV_ADDR=bc1xyz...
