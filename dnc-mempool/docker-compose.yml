@@ -7,7 +7,7 @@ services:
       APP_PORT: $APP_MEMPOOL_PORT
       PROXY_AUTH_ADD: "false"
   web:
-    image: ghcr.io/retropex/mempoolfrontend:v3.3.0-beta@sha256:5f515352f46b892bab7c70af76f716786946dfddb675a1cf7c60e78b0ae5b3fb
+    image: ghcr.io/retropex/mempoolfrontend:v3.4-beta6@sha256:edaeb4dd32f89c60e28d33a6a729af294ab65c7236284afb362c6fba49fcbeff
     user: "1000:1000"
     init: true
     restart: on-failure
@@ -20,11 +20,13 @@ services:
       NGINX_HOSTNAME: $APP_MEMPOOL_API_IP
       LIGHTNING_DETECTED_PORT: $APP_MEMPOOL_LIGHTNING_NODE_PORT
       AUDIT: "true"
+      BLOCK_WEIGHT_UNITS: 800000
+      ACCELERATOR_BUTTON: "false"
     networks:
       default:
         ipv4_address: $APP_MEMPOOL_IP
   api:
-    image: ghcr.io/retropex/mempoolbackend:v3.3.0-beta@sha256:05240bd6dda0b66c18273d1bd2643d58d0c4296437e6b4e3fdbfa1d46f03eb08
+    image: ghcr.io/retropex/mempoolbackend:v3.4-beta6@sha256:c9350a1c913bda5ebce1310e1b956a87a4d398c442f39c6c920e928e21aa5c50
     user: "1000:1000"
     init: true
     restart: on-failure
@@ -63,6 +65,11 @@ services:
       MEMPOOL_BLOCKS_SUMMARIES_INDEXING: "true"
       MEMPOOL_GOGGLES_INDEXING: "true"
       MEMPOOL_AUDIT: "true"
+      MEMPOOL_AUTOMATIC_POOLS_UPDATE: "true"
+      MEMPOOL_POOLS_UPDATE_DELAY: "43200"
+      MEMPOOL_POOLS_JSON_URL: "https://raw.githubusercontent.com/retropex/mining-pools/master/pools-v2.json"
+      MEMPOOL_POOLS_JSON_TREE_URL: "https://api.github.com/repos/retropex/mining-pools/git/trees/master"
+      MEMPOOL_BLOCK_WEIGHT_UNITS: 800000
     networks:
        default:
          ipv4_address: $APP_MEMPOOL_API_IP
