@@ -4,7 +4,7 @@ implements:
   - bitcoin
 category: bitcoin
 name: Bitcoin Knots
-version: "1.2.22"
+version: "1.2.23"
 tagline: Run your personal node powered by Bitcoin Knots
 icon: https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/bitcoin-knots/icon.svg
 description: >-
