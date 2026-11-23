@@ -10,7 +10,7 @@ services:
     image: ghcr.io/rleed/umbrel-ratum-gateway:latest
     entrypoint: ["/app/ratum_gateway"]
     command: ["--config=/app/conf/datum_gateway_config.json"]
-    user: 1000:1000
+    user: 10001:10001
     restart: on-failure
     # Match Debian's DATUM Gateway systemd service (LimitNOFILE=65535).
     ulimits:
