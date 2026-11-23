@@ -13,7 +13,7 @@ dependencies:
   - bitcoin
 repo: https://github.com/iohzrd/ratum
 support: https://github.com/iohzrd/ratum
-port: 21001
+port: 21000
 gallery:
   - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/1.jpg
   - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/2.jpg
