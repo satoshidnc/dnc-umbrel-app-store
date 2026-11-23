@@ -20,7 +20,7 @@ if [ -f "${DATUM_CONFIG_FILE}" ]; then
   # Update the configuration
   jq --arg user "$APP_BITCOIN_RPC_USER" \
      --arg pass "$APP_BITCOIN_RPC_PASS" \
-     --arg url "${APP_BITCOIN_NODE_IP}:${APP_BITCOIN_RPC_PORT}" \
+     --arg url "http://${APP_BITCOIN_NODE_IP}:${APP_BITCOIN_RPC_PORT}" \
      '.bitcoind.rpcuser = $user | 
       .bitcoind.rpcpassword = $pass | 
       .bitcoind.rpcurl = $url' \
