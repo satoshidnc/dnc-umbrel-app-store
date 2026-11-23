@@ -4,10 +4,10 @@ services:
   app_proxy:
     environment:
       APP_HOST: dnc-ratum-gateway_datum_1
-      APP_PORT: 21000
+      APP_PORT: 21001
 
   datum:
-    image: ghcr.io/horizon-btc/datum:v1.15-blake2b@sha256:e0d99c488dfca0401c19707e3f036b759ba6dd48223b5f0fc11029d2eaf9cf48
+    image: ghcr.io/rleed/umbrel-ratum-gateway:latest
     entrypoint: ["/app/ratum_gateway"]
     command: ["--config=/app/conf/datum_gateway_config.json"]
     user: 1000:1000
