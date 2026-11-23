@@ -3,7 +3,7 @@ id: dnc-ratum-gateway
 category: bitcoin
 name: RATUM Gateway
 version: "v0.1.74-0"
-icon: https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/icon.svg
+icon: https://raw.githubusercontent.com/rleed/dnc-umbrel-app-store/master/images/ratum-gateway/icon.svg
 tagline: Self-sovereign Bitcoin mining
 description: >-
   RATUM Gateway is a modern version of the DATUM Gateway, intended to be used with Bitcoin mining pools that run RATUM Prime on their servers.
