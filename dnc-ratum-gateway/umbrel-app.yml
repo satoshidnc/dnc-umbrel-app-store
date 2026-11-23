@@ -1,0 +1,49 @@
+manifestVersion: 1.1
+id: dnc-ratum-gateway
+category: bitcoin
+name: RATUM Gateway
+version: "v0.1.74-0"
+icon: https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/icon.svg
+tagline: Self-sovereign Bitcoin mining
+description: >-
+  RATUM Gateway is a modern version of the DATUM Gateway, intended to be used with Bitcoin mining pools that run RATUM Prime on their servers.
+developer: iohzrd
+website: https://github.com/iohzrd
+dependencies:
+  - bitcoin
+repo: https://github.com/iohzrd/ratum
+support: https://github.com/iohzrd/ratum
+port: 21001
+gallery:
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/1.jpg
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/2.jpg
+  - https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/datum/3.jpg
+path: ""
+defaultUsername: "admin"
+deterministicPassword: true
+releaseNotes: >-
+  Initial inclusion of RATUM Gateway.
+widgets:
+  - id: "stats"
+    type: "four-stats"
+    refresh: "30s"
+    endpoint: "datum:21000/umbrel-api"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "Connections"
+          text: "12"
+          subtext: "Worker"
+        - title: "Hashrate"
+          text: "21"
+          subtext: "TH/s"
+        - title: "Block template reward"
+          text: "3.12"
+          subtext: "BTC"
+        - title: "Shares (A/R)"
+          text: "2000/1"
+          subtext: ""
+submitter: rleed
+submission: https://github.com/getumbrel/umbrel-apps/pull/1661
