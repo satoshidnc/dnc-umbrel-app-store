@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: dnc-ratum-gateway_datum_1
-      APP_PORT: 21001
+      APP_PORT: 21000
 
   datum:
     image: ghcr.io/rleed/umbrel-ratum-gateway:latest
