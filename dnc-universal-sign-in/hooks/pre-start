@@ -27,7 +27,7 @@ if [ -f "${CONFIG_FILE}" ]; then
   # Update the configuration
   echo "DNC_US_BCRPC_USER=$APP_BITCOIN_RPC_USER" >> "$CONFIG_FILE"
   echo "DNC_US_BCRPC_PASS=$APP_BITCOIN_RPC_PASS" >> "$CONFIG_FILE"
-  echo "DNC_US_BCRPC_URL=http://${APP_BITCOIN_RPC_NODE_IP}:${APP_BITCOIN_RPC_PORT}" >> "$CONFIG_FILE"
+  echo "DNC_US_BCRPC_URL=http://${APP_BITCOIN_NODE_IP}:${APP_BITCOIN_RPC_PORT}" >> "$CONFIG_FILE"
 
   # reset permissions
   chown "${DESIRED_OWNER}" "$CONFIG_FILE"
