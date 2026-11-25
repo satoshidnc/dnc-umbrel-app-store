@@ -17,8 +17,6 @@ description: >-
 
 
 gallery: []
-dependencies:
-  - bitcoin
 developer: rleed
 website: https://github.com/rleed
 submitter: rleed
@@ -37,7 +35,8 @@ releaseNotes: |-
   ## Add a tip to your login page
   In your CMS, add a hint such as `Please switch to [Universal Sign-in](/sign-in)`
 
-dependencies: []
+dependencies:
+  - bitcoin
 path: ""
 defaultUsername: ""
 defaultPassword: ""
