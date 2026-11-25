@@ -6,7 +6,7 @@ APP_DATA_DIR="$(readlink -f "$(dirname "${BASH_SOURCE[0]}")/..")"
 CONFIG_FILE="${APP_DATA_DIR}/data/env"
 DESIRED_OWNER="1000:1000"
 
-if [ -f "${CONFIG_FILE}" ]; then
+if [ -f "$CONFIG_FILE" ]; then
   echo "Checking configuration file."
 
   # Check if Knots environment variables are set
@@ -16,7 +16,7 @@ if [ -f "${CONFIG_FILE}" ]; then
   fi
 
   # Check if already configured
-  if ( source .env 2>/dev/null; [ -n "$DNC_US_BCRPC_URL" ] ); then
+  if ( source "$CONFIG_FILE" 2>/dev/null; [ -n "$DNC_US_BCRPC_URL" ] ); then
     echo "Already configured. Exiting."
     exit 1
   fi
