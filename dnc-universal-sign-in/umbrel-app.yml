@@ -17,6 +17,8 @@ description: >-
 
 
 gallery: []
+dependencies:
+  - bitcoin
 developer: rleed
 website: https://github.com/rleed
 submitter: rleed
