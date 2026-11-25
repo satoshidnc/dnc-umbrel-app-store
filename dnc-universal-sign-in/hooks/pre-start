@@ -1,1 +1,40 @@
+#!/usr/bin/env bash
 
+# This pre-start script updates the env file to include the user's Knots RPC configuration
+
+APP_DATA_DIR="$(readlink -f "$(dirname "${BASH_SOURCE[0]}")/..")"
+CONFIG_FILE="${APP_DATA_DIR}/data/env"
+DESIRED_OWNER="1000:1000"
+
+if [ -f "${CONFIG_FILE}" ]; then
+  echo "Checking configuration file."
+
+  # Check if Knots environment variables are set
+  if [ -z "${APP_BITCOIN_RPC_USER}" ] || [ -z "${APP_BITCOIN_RPC_PASS}" ] || [ -z "${APP_BITCOIN_NODE_IP}" ] || [ -z "${APP_BITCOIN_RPC_PORT}" ]; then
+    echo "Missing Bitcoin Knots environment variables. Exiting."
+    exit 1
+  fi
+
+  # Check if already configured
+  if ( source .env 2>/dev/null; [ -n "$DNC_US_BCRPC_URL" ] ); then
+    echo "Already configured. Exiting."
+    exit 1
+  fi
+
+
+  echo "Initializing config with Bitcoin Knots RPC settings."
+
+  # Update the configuration
+  echo "DNC_US_BCRPC_USER=$APP_BITCOIN_RPC_USER" >> "$CONFIG_FILE"
+  echo "DNC_US_BCRPC_PASS=$APP_BITCOIN_RPC_PASS" >> "$CONFIG_FILE"
+  echo "DNC_US_BCRPC_URL=http://${APP_BITCOIN_RPC_NODE_IP}:${APP_BITCOIN_RPC_PORT}" >> "$CONFIG_FILE"
+
+  # reset permissions
+  chown "${DESIRED_OWNER}" "$CONFIG_FILE"
+    
+  echo "Configuration updated successfully."
+
+else
+  echo "Configuration file not found. Installation incomplete."
+  exit 1
+fi
